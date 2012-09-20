@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--enhanced scheduler for my little tool
+1. which testcases to run
+2. the order of running test cases
+
+running status: summary/detail/open detail; 
+report: generating a report for each test case;   some charts to display the success rate; 
+-->
+<schedule>
+<name>test</name>
+<maxthreads>30</maxthreads>
+<randommode>true</randommode>
+<report>c:\log</report>
+<testcases>
+	<testcase name="t1" path="" order="1">
+	</testcase>
+	<testcase name="t2" path="" order="2">
+	</testcase>
+	<testcase name="t3" path="" order="3">
+	</testcase>
+</testcases>
+</schedule>
