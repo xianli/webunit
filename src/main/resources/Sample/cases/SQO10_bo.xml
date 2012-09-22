@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testcase name="SQO10" id="1" actionDomain="web" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> 
+	<header> 
+		<!-- 
+		Header section includes informational stuff, which could be omitted.
+		--> 
+		<name>SQO10</name>
+		<author>kevin</author>
+		<version>1.0</version>
+		<date>Jan 18th, 2008</date> 
+		<time>09:00:00</time>
+		<objective>......</objective> 
+		<prerequisites>Some data, blahblah.</prerequisites>
+		<info>Here displays some readable information.</info> 
+	</header>
+	<mapping-set>
+		<mapping src="SQO10_map.xml" />
+	</mapping-set>
+	<data-set>
+		<data src="SQO10_data.xml"></data>
+	</data-set>
+	<iter-policy>sequential</iter-policy>
+	<prolog>
+		Browser $web:DSWhome.
+		Accept "{TAB}{TAB}{ENTER}".
+	</prolog>
+	<casepolicy></casepolicy>
+	<coverage></coverage>
+	<casepasscriteria></casepasscriteria>
+	<site></site>
+	<dependentcases>
+	<case src="SQO10_bo.xml"></case>
+	</dependentcases>
+	<keyword-set>
+		<buz-keyword src="business_keyword.xml"/>
+		<sys-keyword src="sys_keyword.xml"/>
+	</keyword-set>
+	<logchannels>
+	<logchannel item="logchannel1"></logchannel>
+	<logchannel item="logchannel2"></logchannel>
+	</logchannels>
+	<reportchannels>
+	<reportchannel item="report"></reportchannel>
+	</reportchannels>
+	<tags>
+		<tag key="1"></tag>
+		<tag key="2"></tag>
+	</tags>  
+
+	<steps>
+		<step index="1" comment="Login." extension="The main pages should show">
+			Login $web:username $web:password.
+		</step>
+		<step index="2" comment="Click Software quote and order." extension="the Software quote and order page shown">
+			Click common:dsw_QuoteOrderLink.
+		</step>
+		<step index="3" comment="Click Create a sales quote." extension="the Create a sales quote page shown">
+			Click common:quoteOrder_CreateSalesQuoteLink.
+		</step>
+		<step index="4" comment="Select Quote Type of Passport Advantage and country as Poland and click continue." extension="my current quote page shown">
+			Select common:createQuote_QuoteType $web:quoteType.
+			Select common:createQuote_Country $web:country.
+			Click common:createQuote_Continue.
+		</step>
+		<step index="5" comment="Find an existing customer." extension="Find an existing customer.">
+			SelectCustomer $web:siteNumber $web:agreementNumber.
+		</step>
+		<step index="6" comment="Select Fulfillment Source as Channel." extension="Contact information populated">
+			setradio common:myCurrQuote_Channel.
+		</step>
+		<step index="7" comment="Select Reseller." extension="Select Reseller">
+			SelectReseller $web:resellerSiteNumber.
+		</step>
+		<step index="8" comment="Select Distributor" extension="Select distributor">
+			SelectDistributor $web:distributorCustName.
+		</step>
+		<step index="9" comment="Find part" extension="Find part">
+			Click common:myCurrQuote_PartsPricingTab.
+			FindPart $web:partNumbers.
+		</step>
+		<step index="10" comment="Fill sales info" extension="Fill sales info">
+			Click common:findPartsResult_ReturnToQuote.
+			FillSalesInfo $web:expirationDay $web:expirationMonth $web:expirationYear $web:briefTitle $web:FullDesc $web:BusinessOrg.
+		</step>
+		<step index="11" comment="Submit quote as final" extension="Submit quote as final">
+			Click common:salesInfo_SubmitAsFinal.
+		</step>
+	</steps>
+	<epilog>
+	</epilog>
+</testcase>

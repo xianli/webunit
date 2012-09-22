@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<object name="common" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<object name="logon_Username">
+		<prop name="value">logonId</prop>
+		<prop name="type">textfield</prop>
+		<prop name="propertyName">.id</prop>
+		<prop name="classID">Html.INPUT.text</prop>								
+	</object>
+	<object name="logon_Password">
+		<prop name="value">logonPassword</prop>
+		<prop name="type">textfield</prop>
+		<prop name="propertyName">.id</prop>
+		<prop name="classID">Html.INPUT.password</prop>								
+	</object>
+	<object name="logon_Submit">
+		<prop name="value">Submit</prop>
+		<prop name="type">button</prop>
+		<prop name="propertyName">.value</prop>
+		<prop name="classID">Html.INPUT.submit</prop>								
+	</object>
+	
+	<object name="dsw_QuoteOrderLink">
+		<prop name="value">Software quote and order</prop>
+		<prop name="type">link</prop>
+		<prop name="propertyName">.text</prop>
+		<prop name="classID">Html.A</prop>							
+	</object>
+	
+	<object name="quoteOrder_CreateSalesQuoteLink">
+		<prop name="value">Create a sales quote</prop>
+		<prop name="type">link</prop>
+		<prop name="propertyName">.text</prop>
+		<prop name="classID">Html.A</prop>							
+	</object>
+	
+	<object name="createQuote_QuoteType">
+		<prop name="value">lob</prop>
+		<prop name="type">select</prop>
+		<prop name="propertyName">.name</prop>
+		<prop name="classID">Html.SELECT</prop>	
+	</object>
+	<object name="createQuote_Country">
+		<prop name="value">country</prop>
+		<prop name="type">select</prop>
+		<prop name="propertyName">.name</prop>
+		<prop name="classID">Html.SELECT</prop>							
+	</object>
+	<object name="createQuote_Continue">
+		<prop name="value">Continue</prop>
+		<prop name="type">button</prop>
+		<prop name="propertyName">.value</prop>
+		<prop name="classID">Html.INPUT.submit</prop>								
+	</object>
+	
+	<object name="myCurrQuote_CustomersTab">
+		<prop name="value">Customers and partners</prop>
+		<prop name="type">button</prop>
+		<prop name="propertyName">.title</prop>
+		<prop name="classID">Html.INPUT.image</prop>							
+	</object>
+	<object name="myCurrQuote_PartsPricingTab">
+		<prop name="value">Parts and pricing</prop>
+		<prop name="type">button</prop>
+		<prop name="propertyName">.title</prop>
+		<prop name="classID">Html.INPUT.image</prop>							
+	</object>
+	<object name="myCurrQuote_SalesInfoTab">
+		<prop name="value">Sales information</prop>
+		<prop name="type">button</prop>
+		<prop name="propertyName">.title</prop>
+		<prop name="classID">Html.INPUT.image</prop>							
+	</object>
+	<object name="myCurrQuote_FindCustomer">
+		<prop name="value">Find an existing customer</prop>
+		<prop name="type">button</prop>
+		<prop name="propertyName">.value</prop>
+		<prop name="classID">Html.INPUT.image</prop>							
+	</object>
+	<object name="myCurrQuote_Channel">
+		<prop name="value">CHANNEL</prop>
+		<prop name="type">radiobutton</prop>
+		<prop name="propertyName">.value</prop>
+		<prop name="classID">Html.INPUT.radio</prop>							
+	</object>
+	<object name="myCurrQuote_SelectReseller">
+		<prop name="value">Select reseller</prop>
+		<prop name="type">button</prop>
+		<prop name="propertyName">.defaultValue</prop>
+		<prop name="classID">Html.INPUT.image</prop>							
+	</object>
+	<object name="myCurrQuote_SelectDistributor">
+		<prop name="value">Select distributor</prop>
+		<prop name="type">button</prop>
+		<prop name="propertyName">.value</prop>
+		<prop name="classID">Html.INPUT.image</prop>							
+	</object>
+	
+	<object name="findCustomer_SiteNumber">
+		<prop name="value">siteNumber</prop>
+		<prop name="type">textfield</prop>
+		<prop name="propertyName">.id</prop>
+		<prop name="classID">Html.INPUT.text</prop>							
+	</object>
+	<object name="findCustomer_AgreementNumber">
+		<prop name="value">agreementNumber</prop>
+		<prop name="type">textfield</prop>
+		<prop name="propertyName">.id</prop>
+		<prop name="classID">Html.INPUT.text</prop>							
+	</object>
+	<object name="findCustomer_Submit">
+		<prop name="value">Submit</prop>
+		<prop name="type">button</prop>
+		<prop name="pos">top+2</prop>
+		<prop name="propertyName">.value</prop>
+		<prop name="classID">Html.INPUT.submit</prop>								
+	</object>
+	<object name="findCustomerResult_SelectCustomer">
+		<prop name="value">Select customer</prop>
+		<prop name="type">link</prop>
+		<prop name="propertyName">.text</prop>
+		<prop name="pos">top</prop>
+		<prop name="classID">Html.A</prop>							
+	</object>
+
+	<object name="findReseller_SiteNumber">
+		<prop name="value">num</prop>
+		<prop name="type">textfield</prop>
+		<prop name="propertyName">.id</prop>
+		<prop name="classID">Html.INPUT.text</prop>							
+	</object>
+	<object name="findReseller_Submit">
+		<prop name="value">Submit</prop>
+		<prop name="type">button</prop>
+		<prop name="propertyName">.value</prop>
+		<prop name="pos">top+2</prop>
+		<prop name="classID">Html.INPUT.submit</prop>								
+	</object>
+	
+	<object name="findResellerResult_SelectReseller">
+		<prop name="value">Select reseller</prop>
+		<prop name="type">link</prop>
+		<prop name="propertyName">.text</prop>
+		<prop name="classID">Html.A</prop>							
+	</object>
+
+	<object name="findDistributor_CustomerName">
+		<prop name="value">name</prop>
+		<prop name="type">textfield</prop>
+		<prop name="propertyName">.id</prop>
+		<prop name="classID">Html.INPUT.text</prop>							
+	</object>
+	<object name="findDistributor_Submit">
+		<prop name="value">Submit</prop>
+		<prop name="pos">top</prop>
+		<prop name="type">button</prop>
+		<prop name="propertyName">.value</prop>
+		<prop name="classID">Html.INPUT.submit</prop>								
+	</object>
+
+	<object name="findDistributorResult_SelectDistributor">
+		<prop name="value">Select distributor</prop>
+		<prop name="type">link</prop>
+		<prop name="propertyName">.text</prop>
+		<prop name="pos">top</prop>
+		<prop name="classID">Html.A</prop>							
+	</object>
+
+	<object name="partsPricing_FindParts">
+		<prop name="value">findpart</prop>
+		<prop name="type">button</prop>
+		<prop name="propertyName">.value</prop>
+		<prop name="classID">Html.INPUT.image</prop>							
+	</object>
+
+	<object name="findParts_PartNumbers">
+		<prop name="value">partNumbers</prop>
+		<prop name="type">textfield</prop>
+		<prop name="propertyName">.id</prop>
+		<prop name="classID">Html.TEXTAREA</prop>							
+	</object>
+	<object name="findparts_Submit">
+		<prop name="value">Submit</prop>
+		<prop name="type">button</prop>
+		<prop name="propertyName">.value</prop>
+		<prop name="pos">top</prop>
+		<prop name="classID">Html.INPUT.submit</prop>								
+	</object>
+
+	<object name="findPartsResult_Checkbox">
+		<prop name="value">D52ZYLL</prop>
+		<prop name="type">checkbox</prop>
+		<prop name="propertyName">.value</prop>
+		<prop name="classID">Html.INPUT.checkbox</prop>							
+	</object>
+	<object name="findPartsResult_AddSelectedParts">
+		<prop name="value">Add selected.*</prop>
+		<prop name="type">button</prop>
+		<prop name="propertyName">.alt</prop>
+		<prop name="classID">Html.INPUT.image</prop>							
+	</object>
+	<object name="findPartsResult_ReturnToQuote">
+		<prop name="value">Return to draft quote</prop>
+		<prop name="type">link</prop>
+		<prop name="propertyName">.text</prop>
+		<prop name="classID">Html.A</prop>							
+	</object>
+
+	<object name="salesInfo_ExpirationDay">
+		<prop name="value">expirationDay</prop>
+		<prop name="type">select</prop>
+		<prop name="propertyName">.name</prop>
+		<prop name="classID">Html.SELECT</prop>							
+	</object>
+	<object name="salesInfo_ExpirationMonth">
+		<prop name="value">expirationMonth</prop>
+		<prop name="type">select</prop>
+		<prop name="propertyName">.name</prop>
+		<prop name="classID">Html.SELECT</prop>							
+	</object>
+	<object name="salesInfo_ExpirationYear">
+		<prop name="value">expirationYear</prop>
+		<prop name="type">select</prop>
+		<prop name="propertyName">.name</prop>
+		<prop name="classID">Html.SELECT</prop>							
+	</object>
+	<object name="salesInfo_BriefTitle">
+		<prop name="value">briefTitle</prop>
+		<prop name="type">textfield</prop>
+		<prop name="propertyName">.id</prop>
+		<prop name="classID">Html.INPUT.text</prop>							
+	</object>
+	<object name="salesInfo_FullDesc">
+		<prop name="value">quoteDesc</prop>
+		<prop name="type">textfield</prop>
+		<prop name="propertyName">.id</prop>
+		<prop name="classID">Html.TEXTAREA</prop>							
+	</object>
+	<object name="salesInfo_BusinessPartner">
+		<prop name="value">sionCustInit</prop>
+		<prop name="type">radiobutton</prop>
+		<prop name="propertyName">.id</prop>
+		<prop name="classID">Html.INPUT.radio</prop>							
+	</object>
+	<object name="salesInfo_BusinessOrg">
+		<prop name="value">busOrgCode</prop>
+		<prop name="type">select</prop>
+		<prop name="propertyName">.name</prop>
+		<prop name="classID">Html.SELECT</prop>							
+	</object>
+	<object name="salesInfo_SaveQuote">
+		<prop name="value">Save as draft</prop>
+		<prop name="type">button</prop>
+		<prop name="propertyName">.value</prop>
+		<prop name="classID">Html.INPUT.image</prop>							
+	</object>
+	<object name="salesInfo_Order">
+		<prop name="value">Order</prop>
+		<prop name="type">button</prop>
+		<prop name="propertyName">.value</prop>
+		<prop name="classID">Html.INPUT.image</prop>							
+	</object>
+	<object name="salesInfo_SubmitAsFinal">
+		<prop name="value">Submit as final</prop>
+		<prop name="type">button</prop>
+		<prop name="propertyName">.value</prop>
+		<prop name="classID">Html.INPUT.image</prop>							
+	</object>
+
+	<object name="submitQuote_EmailToAddress">
+		<prop name="value">chkEmailAddr</prop>
+		<prop name="type">checkbox</prop>
+		<prop name="propertyName">.id</prop>
+		<prop name="classID">Html.INPUT.checkbox</prop>							
+	</object>
+	<object name="submitQuote_Address">
+		<prop name="value">custEmailAddr</prop>
+		<prop name="type">textfield</prop>
+		<prop name="propertyName">.id</prop>
+		<prop name="classID">Html.INPUT.text</prop>							
+	</object>
+	<object name="submitQuote_CustomizedText">
+		<prop name="value">customMsg</prop>
+		<prop name="type">textfield</prop>
+		<prop name="propertyName">.id</prop>
+		<prop name="classID">Html.TEXTAREA</prop>							
+	</object>
+	<object name="submitQuote_Submit">
+		<prop name="value">Submit</prop>
+		<prop name="type">button</prop>
+		<prop name="propertyName">.value</prop>
+		<prop name="classID">Html.INPUT.submit</prop>							
+	</object>
+
+	<object name="quoteIsFinal_QuoteStatusLink">
+		<prop name="value">Quote status</prop>
+		<prop name="type">link</prop>
+		<prop name="propertyName">.text</prop>
+		<prop name="classID">Html.A</prop>							
+	</object>
+
+	<object name="status_SalesQuotesCheck">
+		<prop name="value">SLSQUOTE</prop>
+		<prop name="type">checkbox</prop>
+		<prop name="propertyName">.value</prop>
+		<prop name="classID">Html.INPUT.checkbox</prop>							
+	</object>
+	<object name="status_PACheck">
+		<prop name="value">PA</prop>
+		<prop name="type">checkbox</prop>
+		<prop name="propertyName">.value</prop>
+		<prop name="classID">Html.INPUT.checkbox</prop>							
+	</object>
+	<object name="status_SelectAllStatuses">
+		<prop name="value">Select all statuses</prop>
+		<prop name="type">link</prop>
+		<prop name="propertyName">.text</prop>
+		<prop name="classID">Html.A</prop>							
+	</object>
+	<object name="status_aWeek">
+		<prop name="value">7</prop>
+		<prop name="type">radiobutton</prop>
+		<prop name="propertyName">.value</prop>
+		<prop name="classID">Html.INPUT.radio</prop>							
+	</object>
+	<object name="status_SortBy">
+		<prop name="value">sortFilter</prop>
+		<prop name="type">select</prop>
+		<prop name="propertyName">.name</prop>
+		<prop name="classID">Html.SELECT</prop>							
+	</object>
+	<object name="status_CreatorCheck">
+		<prop name="value">Creator</prop>
+		<prop name="type">checkbox</prop>
+		<prop name="propertyName">.value</prop>
+		<prop name="classID">Html.INPUT.checkbox</prop>							
+	</object>
+	<object name="status_EditorCheck">
+		<prop name="value">Editor</prop>
+		<prop name="type">checkbox</prop>
+		<prop name="propertyName">.value</prop>
+		<prop name="classID">Html.INPUT.checkbox</prop>							
+	</object>
+	<object name="status_ApproverCheck">
+		<prop name="value">Approver</prop>
+		<prop name="type">checkbox</prop>
+		<prop name="propertyName">.value</prop>
+		<prop name="classID">Html.INPUT.checkbox</prop>							
+	</object>
+	<object name="status_ReviewerCheck">
+		<prop name="value">Reviewer</prop>
+		<prop name="type">checkbox</prop>
+		<prop name="propertyName">.value</prop>
+		<prop name="classID">Html.INPUT.checkbox</prop>							
+	</object>
+	<object name="status_FindQuotes">
+		<prop name="value">Find quotes</prop>
+		<prop name="type">button</prop>
+		<prop name="propertyName">.value</prop>
+		<prop name="classID">Html.INPUT.submit</prop>							
+	</object>
+	
+	<object name="statusResult_ViewStatusDetails">
+		<prop name="value">View status details</prop>
+		<prop name="type">link</prop>
+		<prop name="propertyName">.text</prop>
+		<prop name="pos">top</prop>
+		<prop name="classID">Html.A</prop>							
+	</object>
+	
+</object>

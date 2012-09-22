@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data name="web" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> 
+	<item key="DSWhome">
+		<value index="1">https://url</value>
+	</item>
+	<item key="username">
+		<value index="1">qingguol@cn.ibm.com</value>
+	</item>
+	<item key="password">
+		<value index="1">hellowizard_1983</value>
+	</item>
+	<item key="quoteType">
+		<value index="1">Passport Advantage/Passport Advantage Express</value>
+	</item>
+	<item key="country">
+		<value index="1">Poland</value>
+	</item>
+	<item key="siteNumber">
+		<value index="1">7059306</value>
+	</item>
+	<item key="agreementNumber">
+		<value index="1">63022</value>
+	</item>
+	<item key="resellerSiteNumber">
+		<value index="1">7706331</value>
+	</item>
+	<item key="distributorCustName">
+		<value index="1">a</value>
+	</item>
+	<item key="partNumbers">
+		<value index="1">D52ZYLL</value>
+	</item>
+	<item key="expirationDay">
+		<value index="1">29</value>
+	</item>
+	<item key="expirationMonth">
+		<value index="1">January</value>
+	</item>
+	<item key="expirationYear">
+		<value index="1">2008</value>
+	</item>
+	<item key="briefTitle">
+		<value index="1">Q10 Poland</value>
+	</item>
+	<item key="FullDesc">
+		<value index="1">SQO Test Q10 for Poland.</value>
+	</item>
+	<item key="BusinessOrg">
+		<value index="1">Sales - IBM.com</value>
+	</item>
+	<item key="address">
+		<value index="1">qingguol@cn.ibm.com</value>
+	</item>
+	<item key="customizedText">
+		<value index="1">Testing Q10</value>
+	</item>
+	<item key="sortBy">
+		<value index="1">Date submitted (descending)</value>
+	</item>
+</data>

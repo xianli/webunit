@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keyword-library>
+	<sys-keyword name="Login">
+		<param type="String"/>
+		<param type="String"/>
+	</sys-keyword>
+	<sys-keyword name="SelectCustomer">
+		<param type="String"/>
+		<param type="String"/>
+	</sys-keyword>
+	<sys-keyword name="SelectReseller">
+		<param type="String"/>
+	</sys-keyword>
+	<sys-keyword name="SelectDistributor">
+		<param type="String"/>
+	</sys-keyword>
+	<sys-keyword name="FindPart">
+		<param type="String"/>
+	</sys-keyword>
+	<sys-keyword name="FillSalesInfo">
+		<param type="String"/>
+		<param type="String"/>
+		<param type="String"/>
+		<param type="String"/>
+		<param type="String"/>
+		<param type="String"/>
+	</sys-keyword>
+</keyword-library>

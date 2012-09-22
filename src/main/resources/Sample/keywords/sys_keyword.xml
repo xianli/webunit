@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testcase name="SQO22" id="1" actionDomain="webtesting" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> 
+    <mapping-set>
+    	<mapping src="SQO10_map.xml"/>
+    </mapping-set>
+    <data-set>
+    	<data src="SQO_data.xml"/>
+    </data-set>
+	<keyword-imp name="Login">
+		settext common:logon_Username %PARAM1%.
+		settext common:logon_Password %PARAM2%.
+		Click common:logon_Submit.
+	</keyword-imp>
+	<keyword-imp name="SelectCustomer">
+		Click common:myCurrQuote_FindCustomer.
+		wait 10.
+		settext common:findCustomer_SiteNumber %PARAM1%.
+		settext common:findCustomer_AgreementNumber %PARAM2%.
+		Click common:findCustomer_Submit.
+		wait 10.
+		Click common:findCustomerResult_SelectCustomer.
+	</keyword-imp>
+	<keyword-imp name="SelectCustomer">
+		Click common:myCurrQuote_SelectReseller.
+		wait 10.
+		settext common:findReseller_SiteNumber %PARAM1%.
+		Click common:findReseller_Submit.
+		wait 10.
+		Click common:findResellerResult_SelectReseller.
+	</keyword-imp>
+	<keyword-imp name="SelectDistributor">
+		Click common:myCurrQuote_SelectDistributor.
+		wait 10.
+		settext common:findDistributor_CustomerName %PARAM1%.
+		Click common:findDistributor_Submit.
+		wait 10.
+		Click common:findDistributorResult_SelectDistributor.
+	</keyword-imp>
+	<keyword-imp name="FindPart">
+		Click common:partsPricing_FindParts.
+		wait 10.
+		settext common:findParts_PartNumbers %PARAM1%.
+		Click common:findparts_Submit.
+		wait 10.
+		Check common:findPartsResult_Checkbox true.
+		Click common:findPartsResult_AddSelectedParts.
+	</keyword-imp>
+	<keyword-imp name="FillSalesInfo">
+		Click common:myCurrQuote_SalesInfoTab.
+		wait 10.
+		Select common:salesInfo_ExpirationDay %PARAM1%.
+		Select common:salesInfo_ExpirationMonth %PARAM2%.
+		Select common:salesInfo_ExpirationYear %PARAM3%.
+		settext common:salesInfo_BriefTitle %PARAM4%.
+		settext common:salesInfo_FullDesc %PARAM5%.
+		Select common:salesInfo_BusinessOrg %PARAM6%.
+		setradio common:salesInfo_BusinessPartner.
+		Click common:salesInfo_SaveQuote.
+	</keyword-imp>	
+</testcase>

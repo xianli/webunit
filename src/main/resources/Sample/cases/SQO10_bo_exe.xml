@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testcase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	actionDomain="web" id="1" name="SQO10">
+	<header>
+		<!-- 
+			Header section includes informational stuff, which could be omitted.
+		-->
+		<name>SQO10</name>
+		<author>kevin</author>
+		<version>1.0</version>
+		<date>Jan 18th, 2008</date>
+		<time>09:00:00</time>
+		<objective>......</objective>
+		<prerequisites>Some data, blahblah.</prerequisites>
+		<info>Here displays some readable information.</info>
+	</header>
+	<casepolicy />
+	<coverage />
+	<casepasscriteria />
+	<site />
+	<dependentcases>
+		<case src="SQO10_bo.xml" />
+	</dependentcases>
+	<logchannels>
+		<logchannel item="logchannel1" />
+		<logchannel item="logchannel2" />
+	</logchannels>
+	<reportchannels>
+		<reportchannel item="report" />
+	</reportchannels>
+	<tags>
+		<tag key="1" />
+		<tag key="2" />
+	</tags>
+	<iter-policy>sequential</iter-policy>
+	<mapping-set>
+		<mapping src="SQO10_map.xml" />
+	</mapping-set>
+	<data-set>
+		<data src="SQO10_data.xml" />
+	</data-set>
+	<prolog>Browser $web:DSWhome. Accept "{TAB}{TAB}{ENTER}".</prolog>
+	<steps>
+		<step comment="Login." extension="The main pages should show"
+			index="1">
+			settext common:logon_Username $web:username. 
+			settext common:logon_Password $web:password. 
+			Click	common:logon_Submit.
+		</step>
+		<step comment="Click Software quote and order."
+			extension="the Software quote and order page shown" index="2">
+			Click common:dsw_QuoteOrderLink
+		</step>
+		<step comment="Click Create a sales quote."
+			extension="the Create a sales quote page shown" index="3">
+			Click common:quoteOrder_CreateSalesQuoteLink
+		</step>
+		<step
+			comment="Select Quote Type of Passport Advantage and country as Poland and click continue."
+			extension="my current quote page shown" index="4">
+			Select common:createQuote_QuoteType $web:quoteType 
+			Select	common:createQuote_Country $web:country 
+			Click common:createQuote_Continue
+		</step>
+		<step comment="Find an existing customer."
+			extension="Find an existing customer." index="5">
+			Click common:myCurrQuote_FindCustomer. wait 10. 
+			settext common:findCustomer_SiteNumber $web:siteNumber. 
+			settext	common:findCustomer_AgreementNumber $web:agreementNumber.
+			Click common:findCustomer_Submit.
+			wait 10. 
+			Click common:findCustomerResult_SelectCustomer.
+		</step>
+		<step comment="Select Fulfillment Source as Channel."
+			extension="Contact information populated" index="6">
+			setradio common:myCurrQuote_Channel
+		</step>
+		<step comment="Select Reseller." extension="Select Reseller"
+			index="7" />
+		<step comment="Select Distributor"
+			extension="Select distributor" index="8">
+			Click common:myCurrQuote_SelectDistributor. 
+			wait 10.
+			settext common:findDistributor_CustomerName $web:distributorCustName. 
+			Click common:findDistributor_Submit. 
+			wait 10. 
+			Click common:findDistributorResult_SelectDistributor.
+		</step>
+		<step comment="Find part" extension="Find part" index="9">
+			Click common:myCurrQuote_PartsPricingTab 
+			Click common:partsPricing_FindParts.
+			wait 10. 
+			settext common:findParts_PartNumbers $web:partNumbers. 
+			Click common:findparts_Submit. wait 10. 
+			Check common:findPartsResult_Checkbox true. 
+			Click common:findPartsResult_AddSelectedParts.
+		</step>
+		<step comment="Fill sales info" extension="Fill sales info"
+			index="10">
+			Click common:findPartsResult_ReturnToQuote 
+			Click common:myCurrQuote_SalesInfoTab. 
+			wait 10. 
+			Select common:salesInfo_ExpirationDay $web:expirationDay. 
+			Select common:salesInfo_ExpirationMonth $web:expirationMonth.
+			Select common:salesInfo_ExpirationYear $web:expirationYear.
+			settext common:salesInfo_BriefTitle $web:briefTitle. 
+			settext	common:salesInfo_FullDesc $web:FullDesc. 
+			Select	common:salesInfo_BusinessOrg $web:BusinessOrg. 
+			setradio common:salesInfo_BusinessPartner.
+			Click common:salesInfo_SaveQuote.
+		</step>
+		<step comment="Submit quote as final"
+			extension="Submit quote as final" index="11">
+			Click common:salesInfo_SubmitAsFinal
+		</step>
+	</steps>
+	<epilog></epilog>
+</testcase>
